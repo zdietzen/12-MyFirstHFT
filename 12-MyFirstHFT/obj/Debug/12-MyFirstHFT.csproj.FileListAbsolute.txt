@@ -1,0 +1,8 @@
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\bin\Debug\12-MyFirstHFT.exe.config
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\bin\Debug\12-MyFirstHFT.exe
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\bin\Debug\12-MyFirstHFT.pdb
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\bin\Debug\Newtonsoft.Json.xml
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\obj\Debug\12-MyFirstHFT.csprojResolveAssemblyReference.cache
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\obj\Debug\12-MyFirstHFT.exe
+C:\Dev\Github\12-MyFirstHFT\12-MyFirstHFT\obj\Debug\12-MyFirstHFT.pdb
