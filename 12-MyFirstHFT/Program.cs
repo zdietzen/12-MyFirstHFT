@@ -7,6 +7,7 @@ namespace _12_MyFirstHFT
 {
     class Program
     {
+       
         private static decimal pastAsk; 
 
         static void Main(string[] args)
@@ -16,7 +17,7 @@ namespace _12_MyFirstHFT
             string ticker = Console.ReadLine();
 
             //this is the timer
-            var timer = new System.Threading.Timer(e => stock, null, TimeSpan.Zero.TimeSpan.FromSeconds(3));
+           
 
 
             using (WebClient webClient = new WebClient())
@@ -35,17 +36,24 @@ namespace _12_MyFirstHFT
                //This saves the json information into a string
                 stock.symbol = a[0]["symbol"].ToString();
                 stock.ask = a[0]["ask"].ToString();
-                
-
+                decimal decimalAsk = Convert.ToDecimal(stock.ask);
                 pastAsk = Convert.ToDecimal(stock.ask);
 
-                
+                if(decimalAsk == pastAsk)
+              
                     //Writes info to console
                     Console.WriteLine("The current price of " + ticker + " is " + stock.ask);
 
-                    Console.ReadLine();
-                }
+                if (decimalAsk < pastAsk)
+                    Console.WriteLine(ticker + " is tanking! SELL, SELL, SELL!");
+
+                if (decimalAsk > pastAsk)
+                    Console.WriteLine(ticker + " is taking off! BUY BUY BUY");
+
+                
+                
             }
+            Console.ReadLine();
         }
     }
 }
